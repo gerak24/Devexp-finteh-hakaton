@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div id="app">
+    <header> 
+        <p id="prod-name">
+            Analyzer of trading strategies
+        </p>
+    </header>
+    <main>
+        <div class="analyse-container">
+            <div class="tickets-container">
+
+            </div>
+            <div class="canvas-container">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class ="analyse-text">
+                <div class="date-container">
+                    <input class ="input-date" id="minDate" type="date" name="start">
+                    <input class ="input-date" id="maxDate" type="date" name="end">
+                </div>
+                <div class="ticket-container">
+                    <input id="nameQ" type="text" name="name">
+                    <input id="sendData" type="submit">
+                </div>
+                <div class ="calculate-container">
+                    <select id ="selectss"name="list1">
+                        <option>Выбор стратегии</option>
+                        <option id="str1" value ="1">Стратегия1</option>
+                        <option id="str2" value ="2">Стратегия2</option>
+                        <option id="str3" value ="3">Стратегия3</option>
+                    </select>
+                    <br>
+                    <input id= "getMoney" type="button" value ="Отправить">
+                </div>
+                <div class="aswer-container">
+                    <p id="answer"></p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</div>
+</body>
+</html>
